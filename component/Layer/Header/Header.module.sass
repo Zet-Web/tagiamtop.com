@@ -1,0 +1,97 @@
+.container
+  width: 100%
+  max-width: 1397px
+  margin: 0 auto
+  padding: 32px 15px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-color: transparent
+  z-index: 5
+
+  .menu
+    display: flex
+    flex-direction: row
+    align-items: center
+    .burger_menu
+      display: none
+
+  img
+    cursor: pointer
+    z-index: 5
+  .link
+    color: black
+    font-size: 16px
+    font-weight: 400
+    cursor: pointer
+  .white
+    color: #FFFFFF!important
+    font-size: 16px
+    font-weight: 700
+    cursor: pointer
+    z-index: 5
+  .login_button
+    background: #8C66FA
+    padding: 12px 28px
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    z-index: 5
+
+    font-size: 16px
+    color: #FFFFFF
+    font-weight: 500
+  .login_button_whine
+    border: 1.5px solid #5A33C6
+    color: #6134C0
+    background: #FFFFFF
+  @media (max-width: 1215px)
+    .container
+      padding: 32px 25px
+    .menu
+      .burger_menu
+        z-index: 5
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 17px
+        width: 44px
+        height: 44px
+        cursor: pointer
+        background: #E64652
+        border-radius: 5px
+        border: none
+    .white, .link
+      display: none
+  @media (max-width: 800px)
+    img
+      width: 105px
+      height: 22px
+.menu_open
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  padding: 110px 20px 27px
+  background: #754AE7
+  transition: .3s linear
+  transform: translateY(-100%)
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  z-index: 3
+  .mobile_span
+    font-size: 14px
+    font-weight: 600
+    color: #FFFFFF
+    transition: .3s linear
+    cursor: pointer
+    &:hover
+      color: #E64652
+  &.active
+    transform: translateY(0)
+    box-shadow: 0 4px 25px rgba(12, 0, 45, 0.8)
+  @media (max-width: 800px)
+    flex-direction: column
+    gap: 13px

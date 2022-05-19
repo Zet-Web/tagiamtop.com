@@ -1,0 +1,572 @@
+.container
+  position: relative
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+.background
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  width:  calc(100vw - 10px)
+  height: 850px
+  object-fit: cover
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue)
+  background-size: 180% 180%
+  animation: gradient-animation 18s ease infinite
+  @keyframes gradient-animation
+    0%
+      background-position: 0% 50%
+    50%
+      background-position: 100% 50%
+    100%
+      background-position: 0% 50%
+
+  .phone
+    position: absolute
+    top: -7px
+    right: -650px
+    @media (max-width: 1300px)
+      right: -400px
+    @media (max-width: 890px)
+      right: -150px
+      top: 0
+
+  .content
+    height: 730px
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 790px
+    position: relative
+    padding-top: 70px
+    h1
+      color: #FFFFFF
+      font-size: 60px
+      line-height: 130%
+      font-weight: 700
+      margin-bottom: 19px
+    h2
+      color: #FFFFFF
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: 40px
+    div
+      display: flex
+      gap: 17px
+    img
+      position: absolute
+      bottom: -20px
+      left: 0
+      cursor: pointer
+  @media (max-width: 1300px)
+    .background
+      height: 650px
+    .phone
+      height: 740px
+    .content
+      height: 530px
+      max-width: 530px
+      h1
+        font-size: 35px
+      h2
+        font-size: 14px
+  @media (max-width: 890px)
+    .background
+      height: 410px
+    .phone
+      height: 460px
+    .content
+      height: 290px
+      max-width: 530px
+      padding-top: 0
+      h1
+        font-size: 35px
+        margin-bottom: 0
+        margin-top: 0
+      h2
+        font-size: 14px
+        margin-bottom: 16px
+
+  @media (max-width: 890px)
+    .background
+      height: 440px
+    .phone
+      height: 460px
+    .content
+      max-width: 230px
+      height: 320px
+      h1
+        font-size: 16px
+        line-height: 22px
+      h2
+        font-size: 14px
+        margin-bottom: 16px
+        line-height: 130%
+      div
+        flex-direction: column
+
+
+
+  .container_work
+    background: url("/bacgraund-works.jpg")
+    .work
+      padding: 127px 30px
+      .work_box
+        display: flex
+        flex-direction: column
+        gap: 70px
+        align-items: center
+        justify-content: center
+        text-align: center
+        .work_title
+          p
+            color: #272D4D
+            font-weight: 600
+            font-size: 42px
+            margin-bottom: 17px
+          span
+            font-weight: 400
+            color: #767B99
+      .work_info
+        display: flex
+        width: 100%
+        justify-content: space-between
+        gap: 20px
+        .info_box
+          width: 450px
+          padding: 10px 50px 10px 50px
+          img
+            margin-bottom: 23px
+          p
+            color: #272D4D
+            font-size: 24px
+            font-weight: 600
+            margin-bottom: 15px
+          span
+            font-size: 16px
+            color: #767B99
+          &:hover
+            border: 2px dashed #C9C2FD
+            box-shadow: 0 10px 25px #C9C2FD
+          @media(max-width: 1100px)
+            width: 350px
+            padding: 20px
+          @media(max-width: 780px)
+            padding: 10px 50px 10px 50px
+      @media (max-width: 850px)
+        padding: 50px 0
+        .work_box
+          gap: 24px
+
+          .work_title
+            p
+              font-size: 30px
+              margin-bottom: 4px
+            span
+              font-size: 12px
+      @media (max-width: 780px)
+        .work_info
+          flex-direction: column
+          align-items: center
+
+.info_block
+  max-width: 1400px
+  margin: 0 auto
+  width: 100%
+  padding: 60px 60px 0 0
+  display: flex
+  align-items: flex-start
+  gap: 50px
+  div
+    display: flex
+    flex-direction: column
+  @media (max-width: 1000px)
+    flex-direction: column !important
+    img
+      width: 100%
+      max-width: 1000px
+      margin: 0
+      float: none
+
+.info_title
+  font-weight: 600
+  font-size: 42px
+  color: #272D4D
+  @media (max-width: 900px)
+    font-size: 35px
+  @media (max-width: 1000px)
+    text-align: left !important
+    margin: auto !important
+.info_text
+  color: #767B99
+  line-height: 2
+  font-size: 16px
+  .margin_left
+    margin-left: 88px
+  .margin_right
+    margin-right: 88px
+  @media (max-width: 900px)
+    font-size: 14px
+
+.info_buttons
+  margin-top: 30px
+  display: flex
+  flex-direction: row
+  gap: 20px
+@media (max-width: 850px)
+  .info_block
+    gap: 18px
+    padding: 10px
+    flex-direction: column
+
+.question_container
+  max-width: 990px
+  height: 100%
+  width: 100%
+  margin: 0 auto
+  padding: 70px 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @media (max-width: 850px)
+    padding: 40px 0 70px
+.question_div_data
+  display: flex
+  flex-direction: column
+  text-align: center
+  align-items: center
+  gap: 20px
+
+  .question_data_title
+    font-weight: bold
+    font-size: 50px
+    margin-bottom: 30px
+  .question_data_text
+    line-height: 2px
+    margin-bottom: 30px
+    color: #767B99
+  .question_div
+    max-width: 990px
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    border-radius: 10px
+    margin-bottom: 10px
+    div
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      span
+        font-size: 16px
+        @media (max-width: 450px)
+          font-size: 12px
+  .question_p_answer
+    font-size: 14px
+    @media (max-width: 800px)
+      font-size: 12px
+.question_p_index
+  display: flex
+  background-color: #8C66FA
+  border-radius: 5px
+  width: 40px
+  height: 40px
+  margin-right: 10px
+  color: white
+  justify-content: center
+  align-items: center
+.review_container
+  max-width: 560px
+  width: 100%
+
+  height: 100%
+  background-color: #F6F5FF
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  text-align: left
+  gap: 50px
+  padding: 38px 20px
+  .review_title
+    color: #272D4D
+    font-weight: 600
+    font-size: 30px
+    margin-bottom: 0
+    text-align: center
+  @media (max-width: 400px)
+    font-size: 25px
+  p
+    margin-bottom: 10px
+    font-size: 16px
+    @media(max-width: 500px)
+      font-size: 12px
+  .review_input_default
+    max-width: 1400px
+    width: 100%
+    height: 60px
+    border-radius: 7px
+    border-width: 0
+    padding: 10px
+  .review_input_note
+    max-width: 1400px
+    width: 100%
+    height: 166px
+    padding: 10px
+    border-radius: 7px
+    border-width: 0
+    background-color: white
+  @media (max-width: 1100px)
+    max-width: 1100px
+
+
+.review_comment_row
+  max-width: 1400px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 80px
+
+  padding: 20px
+  gap: 30px
+  width: 100%
+  @media (max-width: 1100px)
+    margin-top: 40px
+    flex-direction: column-reverse
+
+.questions
+  max-width: 1400px
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 20px
+  text-align: center
+  align-items: center
+  justify-content: center
+  padding: 0 40px 100px
+  margin: 100px auto 0
+
+  .questions_title
+    color: #272D4D
+    font-weight: 600
+    font-size: 42px
+    margin-bottom: 17px
+  .questions_text
+    color: #767B99
+    font-size: 16px
+    text-align: center
+  @media (max-width: 800px)
+    margin: 60px auto 0
+    .questions_title
+      font-size: 30px
+    .questions_text
+      font-size: 12px
+.getStartedBanner
+  max-width: 1208px
+  width: 100%
+  padding: 0 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: -130px auto 50px
+  border-radius: 15px
+  img
+    position: relative
+    width: 100%
+    height: max-content
+  div
+    position: absolute
+    text-align: center
+    max-width: 544px
+    padding: 40px
+    width: 100%
+    color: white
+    .banner_title
+      font-weight: 600
+      font-size: 42px
+      margin-bottom: 20px
+    .banner_text
+      font-size: 16px
+      margin-bottom: 20px
+  @media (max-width: 920px)
+    .banner_title
+      font-size: 30px
+    .banner_text
+      font-size: 12px
+    img
+      height: 235px
+      object-fit: cover
+      border-radius: 15px
+    div
+      .banner_title
+        font-size: 30px
+      p
+        font-size: 12px
+
+.review_comment_container
+  background: url('/bacgraund-comments.jpg') no-repeat
+  background-size: cover
+
+  .review_comment
+    max-width: 1400px
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 20px
+    text-align: center
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    padding: 0 40px 100px
+    @media (max-width: 800px)
+      padding: 0 20px 100px
+
+.review_comment_title_container
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 20px
+  @media (max-width: 480px)
+    gap: 5px
+
+.review_comment_title
+  color: #272D4D
+  font-weight: 600
+  font-size: 30px
+  text-align: center
+  @media (max-width: 840px)
+    font-size: 30px
+  @media (max-width: 480px)
+    font-size: 22px
+.comments_container
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+.blog_container
+  max-width: 1400px
+  width: 100%
+  padding: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+  margin: 0 auto
+  img
+    width: 50%
+  div
+    display: flex
+    max-width: 1400px
+    width: 100%
+    max-height: 400px
+    height: 100%
+    flex-direction: column
+    border: 2px dashed #C9C2FD
+    cursor: pointer
+    .blog_item_p
+      font-size: 16px
+      padding: 10px
+      @media (max-width: 1000px)
+        font-size: 12px
+    .blog_item_title
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 600
+      font-size: 45px
+      margin: 40px
+      max-height: 150px
+      height: 100%
+      @media(max-width: 1200px)
+        font-size: 22px
+    span
+      max-width: 1400px
+      width: 100%
+      display: flex
+      flex-direction: row
+      font-size: 16px
+      justify-content: space-between
+      padding: 30px
+  @media (max-width: 1100px)
+    display: flex
+    flex-direction: column
+    gap: 20px
+    span
+      font-size: 12px
+    .blog_item_p
+      font-size: 12px
+    img
+      width: 100%
+
+.pagination_button
+  display: flex
+  border-radius: 5px
+  padding: 0
+  width: 40px
+  height: 40px
+  margin-right: 10px
+  justify-content: center
+  align-items: center
+
+.adminPost_container
+  max-width: 1400px
+  width: 100%
+  padding: 5px
+  background: url('/adminPostBg.png')
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-radius: 10px
+  margin: 0 auto
+  span
+    display: flex
+    align-items: center
+    gap: 10px
+    div
+      background-color: white
+      border-radius: 10px
+      padding: 10px
+      width: 45px
+      height: 45px
+      display: flex
+      align-items: center
+      justify-content: center
+  @media(max-width: 400px)
+    flex-direction: column
+    align-items: flex-start
+.textBlock
+  max-width: 1400px
+  width: 100%
+  margin: 0 auto
+  padding: 40px 20px 0
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.textColumns
+  max-width: 1400px
+  width: 100%
+  display: flex
+  flex-direction: column
+  height: 210px
+  flex-wrap: wrap
+  gap: 10px
+  .textP
+    max-width: 600px
+    width: 100%
+  @media (max-width: 1300px)
+    width: 100%
+    flex-wrap: nowrap
+    height: max-content
+    .textP
+      max-width: 1000px
+
+
+
+

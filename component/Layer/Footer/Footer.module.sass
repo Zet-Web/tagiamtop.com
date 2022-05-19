@@ -1,0 +1,65 @@
+.container
+  background: #3D2977
+  .content
+    width: 100%
+    max-width: 1400px
+    padding: 66px 10px 80px
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    gap: 170px
+    position: relative
+    .app
+      position: absolute
+      right: 0
+      top: -25px
+      cursor: pointer
+    .logo_mobile, .copywriting
+      display: none
+    .logo
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      img
+        width: 250px
+        height: 50px
+      span
+        color: #FFFFFF
+        font-size: 14px
+        font-weight: 400
+    .info
+      display: flex
+      flex-direction: column
+      gap: 14px
+      padding-top: 20px
+      span
+        font-size: 16px
+        font-weight: 400
+        color: #FFFFFF
+        cursor: pointer
+    @media (max-width: 1180px)
+      gap: 33px
+      justify-content: space-between
+    @media (max-width: 770px)
+      .logo
+        display: none
+      .logo_mobile
+        display: block
+        width: 250px
+        height: 50px
+        position: absolute
+        top: 15px
+        left: 15px
+      .copywriting
+        display: block
+        color: #FFFFFF
+        font-size: 14px
+        font-weight: 400
+        position: absolute
+        bottom: 15px
+        right: 15px
+    @media (max-width: 490px)
+      display: grid
+      grid-template-columns: 250px 1fr
+      gap: 0
+

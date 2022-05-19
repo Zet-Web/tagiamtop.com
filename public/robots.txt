@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /_next/static/chunks/
+Allow: /_next/static/css/
+
+Sitemap: https://tagiamtop.com/sitemap.xml
